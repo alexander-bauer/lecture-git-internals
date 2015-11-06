@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-%.html: %.md
+git.html: git.md slides.css
 	pandoc --standalone --to dzslides $^ --output $@
 
 all: git.html
